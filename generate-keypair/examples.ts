@@ -9,26 +9,18 @@
 
 
 // Loading an existing KeyPair
-// import dotenv from 'dotenv';
+import dotenv from 'dotenv';
 // import { getKeypairFromEnvironment } from "@solana-developers/helpers";
 
-// dotenv.config({ path: 'config/.env'});
+dotenv.config();
+console.log("Key Pair:", process.env["KEY-PAIR"]);
 
-// console.log(process.env);
+// const keyPair = process.env["KEY-PAIR"];
+// if (!keyPair) {
+//   throw new Error("Environment variable KEY-PAIR is not set");
+// }
 
-import dotenv from 'dotenv';
-import { getKeypairFromEnvironment } from "@solana-developers/helpers";
-
-// Load environment variables from a specific .env file
-dotenv.config({ path: 'config/.env' });
-
-// Use the environment variable
-const keyPair = process.env["KEY-PAIR"];
-if (!keyPair) {
-  throw new Error("Environment variable KEY-PAIR is not set");
-}
-
-console.log(getKeypairFromEnvironment(keyPair));
+// console.log(getKeypairFromEnvironment(keyPair));
 
 
 
