@@ -13,6 +13,8 @@
 // console.log(`✅ Finished! The balance for the wallet at address ${publicKey} is ${balanceInSol} SOL!`);
 
 
+
+
 // check other student's balances
 import { Connection, LAMPORTS_PER_SOL, PublicKey, clusterApiUrl } from "@solana/web3.js";
 
